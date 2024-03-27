@@ -1,11 +1,11 @@
 package tugas;
 
-public class mahasiswa {
+public class Mahasiswa {
     private String NIM;
     private String nama;
     private String jurusan;
 
-    public mahasiswa() {
+    public Mahasiswa() {
         // Konstruktor kosong
     }
 
@@ -34,9 +34,9 @@ public class mahasiswa {
     }
 
     public void getInfo() {
-        System.out.println("NIM: " + NIM);
-        System.out.println("Nama: " + nama);
-        System.out.println("Jurusan: " + jurusan);
+        System.out.println("NIM: " + getNIM());
+        System.out.println("Nama: " + getNama());
+        System.out.println("Jurusan: " + getJurusan());
     }
 
 }

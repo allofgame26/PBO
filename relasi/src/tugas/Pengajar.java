@@ -1,10 +1,10 @@
 package tugas;
 
-public class pengajar {
+public class Pengajar {
     private String NIP;
     private String nama;
 
-    public pengajar() {
+    public Pengajar() {
 
     }
 
@@ -25,9 +25,9 @@ public class pengajar {
     }
 
     public void getInfo() {
-        System.out.println("NIP: " + NIP);
-        System.out.println("Nama: " + nama);
-        System.out.println("");
+        System.out.println("NIP: " + getNIP());
+        System.out.println("Nama: " + getNama());
+        System.out.println(" ");
     }
 
 

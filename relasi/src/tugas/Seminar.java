@@ -1,13 +1,13 @@
 package tugas;
 import java.util.ArrayList;
 
-public class seminar {
+public class Seminar {
     private String nama;
-    private ArrayList<mahasiswa> peserta;
-    private pengajar pengisi;
+    private ArrayList<Mahasiswa> peserta;
+    private Pengajar pengisi;
     private String tanggal;
 
-    public seminar() {
+    public Seminar() {
         peserta = new ArrayList<>();
     }
 
@@ -15,7 +15,7 @@ public class seminar {
         return tanggal;
     }
 
-    public pengajar getPengisi() {
+    public Pengajar getPengisi() {
         return pengisi;
     }
 
@@ -27,7 +27,7 @@ public class seminar {
         this.tanggal = tanggal;
     }
 
-    public void setPengisi(pengajar pengisi) {
+    public void setPengisi(Pengajar pengisi) {
         this.pengisi = pengisi;
     }
 
@@ -36,7 +36,7 @@ public class seminar {
     }
 
     public void tambahPeserta(String NIM, String nama, String jurusan) {
-        mahasiswa pesertaBaru = new mahasiswa();
+        Mahasiswa pesertaBaru = new Mahasiswa();
         pesertaBaru.setNIM(NIM);
         pesertaBaru.setNama(nama);
         pesertaBaru.setJurusan(jurusan);
@@ -44,12 +44,12 @@ public class seminar {
     }
 
     public void getInfo() {
-        System.out.println("Nama Seminar: " + nama);
-        System.out.println("Tanggal Seminar: " + tanggal);
+        System.out.println("Nama Seminar: " + getNama());
+        System.out.println("Tanggal Seminar: " + getTanggal());
         System.out.println("Pengisi Seminar:");
         pengisi.getInfo();
         System.out.println("Daftar Peserta:");
-        for (mahasiswa pesertaSeminar : peserta) {
+        for (Mahasiswa pesertaSeminar : peserta) {
             pesertaSeminar.getInfo();
             System.out.println();
         }
